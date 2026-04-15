@@ -1,2 +1,223 @@
 # baskom
 This is a site from BASKOM to show catalogues for clients
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BASKOM – Bazalt izolyatsiya</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{background:#f5f7f6;color:#111;}
+
+/* NAV */
+.nav{
+  background:#0f2318;
+  color:#fff;
+  padding:15px 25px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{color:#4daa6a;font-size:20px;font-weight:bold}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg,#0f2318,#173325);
+  color:#fff;
+  padding:60px 25px;
+}
+.hero h1{font-size:32px;margin-bottom:10px;}
+.hero span{color:#4daa6a;}
+.hero p{color:#9bbfa6;margin-bottom:20px;max-width:500px;}
+
+.btn{
+  padding:12px 20px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+  margin:5px 5px 0 0;
+  font-weight:bold;
+}
+.primary{background:#1f6b3a;color:#fff;}
+.telegram{background:#0088cc;color:#fff;}
+.call{background:#222;color:#fff;}
+
+.stats{
+  display:flex;
+  gap:20px;
+  margin-top:25px;
+  flex-wrap:wrap;
+}
+.stat{font-size:14px;color:#9bbfa6}
+
+/* SECTION */
+.section{padding:40px 25px;}
+.title{font-size:24px;margin-bottom:20px;}
+
+/* PRODUCTS */
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+.card{
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.06);
+  transition:0.3s;
+}
+.card:hover{transform:translateY(-5px);}
+.price{color:#1f6b3a;font-size:20px;font-weight:bold;margin:10px 0;}
+
+.badge{
+  background:#eaf4ee;
+  color:#145228;
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:12px;
+  display:inline-block;
+  margin-bottom:10px;
+}
+
+/* TRUST */
+.trust{
+  background:#0f2318;
+  color:#fff;
+  padding:40px 25px;
+  text-align:center;
+}
+.trust h2{margin-bottom:20px;}
+.trust-box{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+.trust-item{font-size:18px}
+
+/* CONTACT */
+.contact{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.box{
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+}
+
+/* STICKY CTA */
+.sticky{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  display:flex;
+}
+.sticky a{
+  flex:1;
+  text-align:center;
+  padding:15px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+.sticky .tg{background:#0088cc;}
+.sticky .call{background:#1f6b3a;}
+
+/* MOBILE */
+@media(max-width:600px){
+  .hero h1{font-size:24px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="logo">BASKOM</div>
+  <div>Namangan • Promzona</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Bazalt <span>izolyatsiya</span>ni zavod narxida oling</h1>
+  <p>Ortiqcha vositachilarsiz. Eng arzon narx + yuqori sifat + tez yetkazib berish.</p>
+
+  <button class="btn telegram" onclick="window.location.href='https://t.me/baskom_company'">Telegram yozish</button>
+  <button class="btn call" onclick="window.location.href='tel:+998952282211'">Qo‘ng‘iroq qilish</button>
+
+  <div class="stats">
+    <div class="stat">✔ 100% sifat kafolati</div>
+    <div class="stat">✔ 1 kunda yetkazish</div>
+    <div class="stat">✔ Kuniga 100 000 m²</div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="section">
+  <div class="title">Mahsulotlar</div>
+
+  <div class="products">
+
+    <div class="card">
+      <div class="badge">ENG KO‘P SOTILADI</div>
+      <h3>Bazalt plita (100 plotnost)</h3>
+      <p>O‘lcham: 1200×600×50</p>
+      <div class="price">43 000 so‘m / m²</div>
+      <button class="btn primary" onclick="window.location.href='tel:+998952282211'">Buyurtma</button>
+    </div>
+
+    <div class="card">
+      <div class="badge">PREMIUM SIFAT</div>
+      <h3>Bazalt plita (120 plotnost)</h3>
+      <p>O‘lcham: 1200×600×50</p>
+      <div class="price">52 000 so‘m / m²</div>
+      <button class="btn primary" onclick="window.location.href='tel:+998952282211'">Buyurtma</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- TRUST -->
+<div class="trust">
+  <h2>Nega mijozlar BASKOMni tanlaydi?</h2>
+  <div class="trust-box">
+    <div class="trust-item">✔ Zavoddan to‘g‘ridan-to‘g‘ri</div>
+    <div class="trust-item">✔ Eng arzon narx</div>
+    <div class="trust-item">✔ Tez yetkazib berish</div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+  <div class="title">Aloqa</div>
+
+  <div class="contact">
+    <div class="box">📍 Namangan, Promzona</div>
+
+    <div class="box">
+      📞 +998 95 228 22 11 <br>
+      📞 +998 55 255 22 11 <br>
+      📞 +998 91 821 22 11
+    </div>
+
+    <div class="box">
+      📲 t.me/baskom_company
+    </div>
+  </div>
+</div>
+
+<!-- STICKY CTA -->
+<div class="sticky">
+  <a href="https://t.me/baskom_company" class="tg">Telegram</a>
+  <a href="tel:+998952282211" class="call">Qo‘ng‘iroq</a>
+</div>
+
+</body>
+</html>
